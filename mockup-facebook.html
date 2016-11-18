@@ -1,0 +1,52 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`mockup-facebook`
+A polymer element to mockup how facebook sponsed posts appear.
+
+@demo demo/index.html 
+-->
+
+<dom-module id="mockup-facebook">
+ <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+                box-sizing: border-box;
+                padding: 12px;
+                margin:1em;
+                width:500px;
+                border: 1px solid;
+                border-radius: 3px;
+                background-color: white;
+                border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+            }
+            #likebtn{background-color: #e9ebee;color:#4b4f56;border:1px solid;border-radius: 2px;border-color:#ced0d4;padding: 0 8px;line-height:22px;float: right;margin-right: 20px;}
+            #CTAbtn{background-color: #e9ebee;color:#4b4f56;border:1px solid;border-radius: 2px;border-color:#ced0d4;padding: 0 8px;line-height:22px;float: right;display: inline-block;}
+            .socialact{margin-right: 10px;color:#7f7f7f;}
+        </style>
+
+        <div>
+            <img src="http://placehold.it/40x40" style="float:left;margin-right:8px;">
+            <a herf="#" style="color:#365899;text-decoration:none;font-weight:bold;">Jasper's Market</a><br><span style="color:#999">Sponsored</span>
+            <span id="likebtn">Like Page</span>
+        </div>
+        <p>It's fig season! Not sure what to do with figs? Here's a great dessert recipe to share.</p>
+        <div style="box-shadow: 0 0 0 1px rgba(0,0,0, .15) inset, 0 1px 4px rgba(0,0,0,.1);background-color:white;">
+            <img src="http://placehold.it/474x249" style="max-width:max-content;">
+            <div style="padding:10px 12px;">
+                <span>Fig Tart with Almonds</span>
+                <p style="font-size:12px;">The simplicity of this tart perfectly accents ripe figs. If you don’t have enough time to make a handmade crust, pick up one of Jasper’s pre-made pie crusts.</p>
+                <div style="margin-bottom:5px;"><a style="text-transform:uppercase;color:#90949c;">www.jaspers-market.com</a><span id="CTAbtn">Learn More</span></div>
+            </div>
+        </div>
+        <span style="font-size:12px;color:#90949c;">109 reactions 4 Comments 14 Shares</span>
+        <hr>
+        <span class="socialact">Like</span><span class="socialact">Comment</span><span class="socialact">Share</span>
+    </template>
+  <script>
+    Polymer({
+      is: 'mockup-facebook'
+    });
+  </script>
+</dom-module>
